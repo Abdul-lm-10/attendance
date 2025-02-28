@@ -7,7 +7,15 @@ const App = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />} />
+          <Route path="/" element={<Layout />} >
+          <Route path="/dashboard"/>
+          <Route path="/product"/>
+          <Route path="/addproduct"/>
+          <Route path="/category"/>
+          <Route path="/addcategory"/>
+          <Route path="/orders"/>
+          <Route path="/setting"/>
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
